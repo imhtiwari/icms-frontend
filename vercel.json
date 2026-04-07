@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "name": "icms-frontend",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "build",
+      "dest": "/",
+      "headers": {
+        "Access-Control-Allow-Origin": "http://localhost:8083",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization"
+      }
+    }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "http://localhost:8083/api"
+  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "installCommand": "npm install",
+  "framework": "create-react-app"
+}
