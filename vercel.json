@@ -24,8 +24,5 @@
   "env": {
     "REACT_APP_API_URL": "http://localhost:8083/api"
   },
-  "buildCommand": "npm run build",
-  "outputDirectory": "build",
-  "installCommand": "npm install",
   "framework": "create-react-app"
 }
