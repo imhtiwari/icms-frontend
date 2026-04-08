@@ -35,7 +35,6 @@ import UserManagement from './pages/admin/UserManagement.js';
 import CreateUser from './pages/admin/CreateUser';
 import EditUser from './pages/admin/EditUser';
 import Analytics from './pages/admin/Analytics';
-import AdminStrikeManagement from './components/AdminStrikeManagement';
 import ProfessionalBanManagement from './components/ProfessionalBanManagement';
 
 // Profile Component

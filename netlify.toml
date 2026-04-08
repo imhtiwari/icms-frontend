@@ -5,6 +5,7 @@
 [build.environment]
   NODE_VERSION = "18"
   NPM_VERSION = "8"
+  CI = "false"
 
 [[redirects]]
   from = "/api/*"
